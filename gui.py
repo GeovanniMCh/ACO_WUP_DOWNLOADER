@@ -38,7 +38,7 @@ try:
 except ImportError:
     gmch = None
 
-__VERSION__ = "1.0.2"
+__VERSION__ = "1.0.3"
 targetversion = "alucardianos wup helper"
 current_gui = LooseVersion(__VERSION__)
 PhotoImage = tk.PhotoImage
@@ -1608,7 +1608,7 @@ class RootWindow(tk.Tk):
 
 if __name__ == '__main__':
     root = RootWindow()
-    root.title('ALUCARDIANOS WUP HELPER 1.0.2')
+    root.title('ALUCARDIANOS WUP HELPER 1.0.3')
     root.minsize(800,600)
     root.geometry("990x{}".format(root.winfo_screenheight()))
     root.set_icon()
