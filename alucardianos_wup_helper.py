@@ -2,11 +2,11 @@
 # -*- coding: utf-8 -*-
 #  ALUCARDIO WUP HELPER
 
-# This has been modified to work better with my GUI, ALUCARDIO WUP HELPER 1.0
+# This has been modified to work better with my GUI, ALUCARDIO WUP HELPER 1.0.2
 
 from __future__ import unicode_literals, print_function
 
-__VERSION__ = 'www.alucardianos.com'
+__VERSION__ = 'alucardianos wup helper'
 
 import argparse
 import base64
