@@ -38,7 +38,7 @@ try:
 except ImportError:
     fnku = None
 
-__VERSION__ = "1.0.4"
+__VERSION__ = "1.0.7"
 targetversion = "Alucardianos"
 current_gui = LooseVersion(__VERSION__)
 PhotoImage = tk.PhotoImage
@@ -176,7 +176,7 @@ class RootWindow(tk.Tk):
         self.nb.add(self.tab2, text="Descargas")
         self.nb.add(self.tab5, text="Progreso")		
         self.nb.add(tab3, text="Opciones")
-        self.nb.add(tab4, text="Actualizaciones")
+        self.nb.add(tab4, text="Creditos")
         self.nb.pack(fill="both", expand=True)
         self.output_dir = tk.StringVar()
         self.retry_count = tk.IntVar(value=3)
@@ -1409,7 +1409,7 @@ class RootWindow(tk.Tk):
             print('NO PODRÍA CHEQUEAR LAS ACTUALIZACIONES')
             print('Verifique su conexión a Internet o actualice su Python a una versión >= 3.6.4')
             print('El siguiente error ocurrió:')
-            gui_data_set = ['/dojafoja/null/null/v{}'.format(__VERSION__)]
+            gui_data_set = ['/GeovanniMCh/null/null/v{}'.format(__VERSION__)]
             
         gui_all=[__VERSION__]
         gui_newest=''
