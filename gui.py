@@ -34,9 +34,9 @@ import threading
 from datetime import datetime
 
 try:
-    import alucardianos_wup_helper as gmch
+    import alucardianos_wup_helper as fnku
 except ImportError:
-    gmch = None
+    fnku = None
 
 __VERSION__ = "1.0.3"
 targetversion = "alucardianos wup helper"
@@ -48,27 +48,27 @@ JOBQ = Queue()
 RESULTQ = Queue()
 
 try:
-    gmch_VERSION_ = str(gmch.__VERSION__)
-    current_gmch = LooseVersion(gmch_VERSION_)
+    fnku_VERSION_ = str(fnku.__VERSION__)
+    current_fnku = LooseVersion(fnku_VERSION_)
 except:
-    gmch__VERSION__ = "?"
-    current_gmch = LooseVersion('0')
+    fnku__VERSION__ = "?"
+    current_fnku = LooseVersion('0')
 
 
 
 class VersionParser(HTMLParser):
-    gmch_data_set = []
+    fnku_data_set = []
     gui_data_set = []
 
     def handle_starttag(self, tag, attrs):
-        gmch_data_set = []
+        fnku_data_set = []
         gui_data_set = []
         if tag == "a":
             for name, value in attrs:
                 if name == "href":
-                    if value.startswith("/geovannimch") and value.endswith(".zip"):
-                        self.gmch_data_set.append(value)
-                    elif value.startswith("/geovannimch") and value.endswith(".zip"):
+                    if value.startswith("/llakssz") and value.endswith(".zip"):
+                        self.fnku_data_set.append(value)
+                    elif value.startswith("/GeovanniMCh") and value.endswith(".zip"):
                         self.gui_data_set.append(value)
 
 
@@ -128,7 +128,7 @@ class DownloadWorker(threading.Thread):
                     h3 = job[1]
 
                     # Attempt to download .app file
-                    if not gmch.download_file(app[0], app[1], app[2], expected_size=app[3], resultsq=self.resultQ,
+                    if not fnku.download_file(app[0], app[1], app[2], expected_size=app[3], resultsq=self.resultQ,
                                               titleid=title_id, threadid=self.thread_id):
                         self.resultQ.put(('fail', '{}.app'.format(app[0].split('/')[6]), title_id))
                         self.resultQ.put(('log', 'DOWNLOAD ERROR: Thread {} failed to download {}.app for title {}'.format(
@@ -138,7 +138,7 @@ class DownloadWorker(threading.Thread):
                             ('log', 'Thread {} finished downloading {}.app for title {}'.format(self.thread_id, app[0].split('/')[6], title_id)))
 
                     # Attempt to download .h3 file
-                    if not gmch.download_file(h3[0], h3[1], h3[2], ignore_404=h3[3], resultsq=self.resultQ,
+                    if not fnku.download_file(h3[0], h3[1], h3[2], ignore_404=h3[3], resultsq=self.resultQ,
                                               titleid=title_id, threadid=self.thread_id):
                         self.resultQ.put(('fail', '{}'.format(h3[0].split('/')[6]), title_id))
                         self.resultQ.put(('log', 'DOWNLOAD ERROR: Thread {} failed to download {} for title {}'.format(
@@ -152,8 +152,8 @@ class RootWindow(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self)
         self.versions = {'gui_new': '', 'gui_all': '', 'gui_url': 'https://github.com/GeovanniMCh/ALUCARDIANOS-WUP-HELPER/releases',
-                         'gmch_new': '', 'gmch_all': '',
-                         'gmch_url': 'https://github.com/GeovanniMCh/ALUCARDIANOS-WUP-HELPER/releases'}
+                         'fnku_new': '', 'fnku_all': '',
+                         'fnku_url': 'https://github.com/llakssz/FunKiiU/releases'}
 
         self.download_list = []
         self.selection_list = []
@@ -223,7 +223,7 @@ class RootWindow(tk.Tk):
         self.idvar = tk.StringVar()
         self.idvar.trace('w', self.id_changed)
         self.newest_gui_ver = tk.StringVar()
-        self.newest_gmch_ver = tk.StringVar()
+        self.newest_fnku_ver = tk.StringVar()
         self.user_search_var = tk.StringVar()
         self.user_search_var.trace('w', self.user_search_changed)
         self.usa_selections = {'game': [], 'dlc': [], 'update': [], 'demo': [], 'system': []}
@@ -275,15 +275,15 @@ class RootWindow(tk.Tk):
         t1_frm6.pack()
 
         ## Check for FunKiiU existence and download targeted version if not.
-        global gmch
-        if not gmch:
+        global fnku
+        if not fnku:
             self.set_icon()
             message.showinfo('Falta ALUCARDIANOS WUP HELPER', 'Hace falta ALUCARDIANOS WUP HELPER. Lo descargaremos para ti.',
                              parent=self)
-            self.update_application('gmch', targetversion.split('v')[1])
-            import FunKiiU as gmch
-            global current_gmch
-            current_gmch = LooseVersion(str(gmch.__VERSION__))
+            self.update_application('fnku', targetversion.split('v')[1])
+            import FunKiiU as fnku
+            global current_fnku
+            current_fnku = LooseVersion(str(fnku.__VERSION__))
             message.showinfo('Listo', 'ALUCARDIANOS WUP HELPER ha sido descargado para ti. ¡Disfrutar!', parent=self)
 
         # Tab2
@@ -529,7 +529,7 @@ class RootWindow(tk.Tk):
                                                                                                                              
         ttk.Label(t4_frm7, text='Aplicación ALUCARDIANOS WUP HELPER:', font="Helvetica 13 bold").pack(padx=5, pady=5, side='left')                                                                                  
         ttk.Label(t4_frm8, text='Versión actual:').pack(padx=5, pady=1, side='left')
-        ttk.Label(t4_frm8, text=gmch.__VERSION__).pack(padx=5, pady=1, side='left')
+        ttk.Label(t4_frm8, text=fnku.__VERSION__).pack(padx=5, pady=1, side='left')
 
         t4_frm0.grid(row=0, column=1, padx=5, pady=5, sticky='w')
         t4_frm1.grid(row=1, column=1, padx=5, sticky='w')
@@ -623,7 +623,7 @@ class RootWindow(tk.Tk):
         print('\nActualizando información de la base de datos.....\n')
         dataset = []
         compare_ids = []
-        TK = gmch.TK
+        TK = fnku.TK
         
         try:
             update_count = len(self.title_data) - len(self.title_sizes)
@@ -665,7 +665,7 @@ class RootWindow(tk.Tk):
                 total_size = 0
                 baseurl = 'http://ccs.cdn.c.shop.nintendowifi.net/ccs/download/{}'.format(tid)
 
-                if not gmch.download_file(baseurl + '/tmd', 'title.tmd', 1):
+                if not fnku.download_file(baseurl + '/tmd', 'title.tmd', 1):
                     print('ERROR: no se pudo descargar TMD...')
                 else:
                     with open('title.tmd', 'rb') as f:
@@ -678,7 +678,7 @@ class RootWindow(tk.Tk):
                         c_id = binascii.hexlify(tmd[c_offs:c_offs + 0x04]).decode()
                         total_size += int(binascii.hexlify(tmd[c_offs + 0x08:c_offs + 0x10]), 16)
                         
-                    sz = gmch.bytes2human(total_size)
+                    sz = fnku.bytes2human(total_size)
                     os.remove('title.tmd')
 
                 dataset.append((tid, tkey, name, region, cont, sz, total_size, tick))
@@ -757,10 +757,10 @@ class RootWindow(tk.Tk):
         
 
     def check_config_keysite(self):
-        keysite = gmch.get_keysite()
+        keysite = fnku.get_keysite()
         print(u'Descargar/actualizar datos de {}'.format(keysite))
         try:
-            if not gmch.download_file('{}/json'.format(keysite), 'titlekeys.json', 3):
+            if not fnku.download_file('{}/json'.format(keysite), 'titlekeys.json', 3):
                 message.showerror('Error', ('Could not download data file. Either the site is down\nor '
                                   'the saved keysite is incorrect. You can enter a new\nkeysite and try again.'))
             else:
@@ -783,8 +783,8 @@ class RootWindow(tk.Tk):
 
 
     def update_application(self, app, zip_file):
-        if app == 'gmch':
-            self.download_zip(self.versions['gmch_url'].split('releases')[0] + 'archive' + '/v' + zip_file + '.zip')
+        if app == 'fnku':
+            self.download_zip(self.versions['fnku_url'].split('releases')[0] + 'archive' + '/v' + zip_file + '.zip')
         else:
             self.download_zip(self.versions['gui_url'].split('releases')[0] + 'archive' + '/v' + zip_file + '.zip')
 
@@ -1364,7 +1364,7 @@ class RootWindow(tk.Tk):
             self.dl_listbox.insert('end', name)
             total_size.append(int(i[3]))
         total_size = sum(total_size)
-        total_size = gmch.bytes2human(total_size)
+        total_size = fnku.bytes2human(total_size)
         self.total_dl_size.set('Total size: ' + total_size)
         if trigger_warning:
             self.total_dl_size_warning.set(self.dl_warning_msg)
@@ -1375,9 +1375,9 @@ class RootWindow(tk.Tk):
 
     def submit_key_site(self):
         site = self.keysite_box.get().strip()
-        config = gmch.load_config()
+        config = fnku.load_config()
         config['keysite'] = site
-        gmch.save_config(config)
+        fnku.save_config(config)
         print('Listo Guardado.')
         self.populate_selection_list()
         self.build_database()
@@ -1466,7 +1466,7 @@ class RootWindow(tk.Tk):
             r = td.get('region', '').strip()
 
             if t in self.has_ticket or td.get('type', '') == 'UPDATE':
-                rslt = gmch.process_title_id(t, None, name=n, region=r, output_dir=out_dir, retry_count=rtry_count,
+                rslt = fnku.process_title_id(t, None, name=n, region=r, output_dir=out_dir, retry_count=rtry_count,
                                              onlinetickets=True, patch_demo=ptch_demo, patch_dlc=ptch_demo,
                                              simulate=sim, tickets_only=tick_only, resultq=RESULTQ)
 
@@ -1479,7 +1479,7 @@ class RootWindow(tk.Tk):
                     ignored.append(i[1])
                     continue
 
-                rslt = gmch.process_title_id(t, k, name=n, region=r, output_dir=out_dir, retry_count=rtry_count,
+                rslt = fnku.process_title_id(t, k, name=n, region=r, output_dir=out_dir, retry_count=rtry_count,
                                              patch_demo=ptch_demo,
                                              patch_dlc=ptch_demo, simulate=sim, tickets_only=tick_only, resultq=RESULTQ)
             if not rslt:
@@ -1495,7 +1495,7 @@ class RootWindow(tk.Tk):
 
         self.reset_progress()
         self.dl_total_float = totalsize
-        self.dl_total_string.set(gmch.bytes2human(totalsize))
+        self.dl_total_string.set(fnku.bytes2human(totalsize))
         self.progressbar['maximum'] = totalsize
         dlsession = DownloadSession(JOBQ, RESULTQ, self.total_thread_count.get())
         dlsession.populate_job(joblist)
@@ -1509,7 +1509,7 @@ class RootWindow(tk.Tk):
 
     def update_progress(self, prog):
         self.dl_progress += prog
-        self.dl_progress_string.set(gmch.bytes2human(self.dl_progress))
+        self.dl_progress_string.set(fnku.bytes2human(self.dl_progress))
         self.progressbar['value'] = self.dl_progress
         try:
             percent = "{:.2%}".format(float(self.dl_progress) / self.dl_total_float)
