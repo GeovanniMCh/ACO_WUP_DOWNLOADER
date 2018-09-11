@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 #  ALUCARDIO WUP HELPER
 
-# This has been modified to work better with my GUI, ALUCARDIO WUP HELPER 1.0.7
+# This has been modified to work better with my GUI, ALUCARDIO WUP HELPER 1.0.8
 
 from __future__ import unicode_literals, print_function
 

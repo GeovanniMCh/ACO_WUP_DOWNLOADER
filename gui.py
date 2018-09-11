@@ -38,7 +38,7 @@ try:
 except ImportError:
     fnku = None
 
-__VERSION__ = "1.0.7"
+__VERSION__ = "1.0.8"
 targetversion = "Alucardianos"
 current_gui = LooseVersion(__VERSION__)
 PhotoImage = tk.PhotoImage
