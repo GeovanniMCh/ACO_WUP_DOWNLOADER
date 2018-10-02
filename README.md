@@ -1,4 +1,4 @@
-# Alucardianos_Wup_Helper
+# ACO WUP DOWNLOADER
 This is a tool distributed by alucardianos.com, it is a user interface to download WiiU content directly from Nus. GeovanniMCh, 
 Alucardio and MagnaDR worked on it.
 
