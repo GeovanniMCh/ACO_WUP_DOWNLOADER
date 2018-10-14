@@ -47,7 +47,7 @@ except ImportError:
 
 ### Alucardianos team: Change the version of the program here. Make sure you do not change
 ### the format. It must stay exactly like it is. For example: 0.0.2, or 1.2.5, or 1.0.2, etc.
-__VERSION__ = "2.0.1"
+__VERSION__ = "2.0.0"
 
 targetversion = "Alucardianos mod" # This one can be anything you would like
 current_gui = LooseVersion(__VERSION__)
@@ -1478,7 +1478,7 @@ class RootWindow(tk.Tk):
                 cat = i['category']
                 nm = i['name']
                 
-                for each in ('nes','snes','n6','gba','wii','gc','nds'):
+                for each in ('nes','snes','n64','gba','wii','gc','nds'):
                     if cat == each:
                         if rgn == 'USA':
                             self.usa_injectselections[each].append(nm)
