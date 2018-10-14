@@ -27,7 +27,7 @@ spanish = {"Finished":    # English
                "Bienvenido",
 
            "Download":
-               "Descarga",
+               "Descargar",
 
            "Options":
                "Opciones",
@@ -36,7 +36,7 @@ spanish = {"Finished":    # English
                "Actualizaciones",
 
            "Credits":
-               "Creditos",
+               "Créditos",
 
            "Progress":
                "Progreso",
@@ -196,10 +196,10 @@ spanish = {"Finished":    # English
                "Descargar titlekeys.json cada vez que el programa inicie:",
 
            "Save as my settings":
-               "Guardar configuración",
+               "Guardar ajustes",
 
            "Reset settings":
-               "Reiniciar configuración",
+               "Reiniciar ajustes",
 
            "Version Information:":
                "Información de la Versión Actual:",
@@ -208,13 +208,13 @@ spanish = {"Finished":    # English
                "application:",
 
            "Running version:":
-               "Running version:",
+               "Versión actual:",
 
            "Targeted for:":
-               "Targeted for:",
+               "Dirijido a:",
 
            "Latest release:":
-               "Latest release:",
+               "Versión más reciente:",
 
            "Update to latest release:":
                "Actualizar versión más reciente:",
