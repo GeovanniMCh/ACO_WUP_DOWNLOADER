@@ -49,7 +49,7 @@ except ImportError:
 ### the format. It must stay exactly like it is. For example: 0.0.2, or 1.2.5, or 1.0.2, etc.
 __VERSION__ = "2.0.1"
 
-targetversion = "Alucardianos mod" # This one can be anything you would like
+targetversion = "Aco Wup Downloader" # This one can be anything you would like
 current_gui = LooseVersion(__VERSION__)
 PhotoImage = tk.PhotoImage
 failed_downloads = []
