@@ -292,9 +292,9 @@ class RootWindow(tk.Tk):
         self.injectselection_list = []
         self.injectdownload_list = []
         self.inject_dict = {}
-        self.usa_injectselections = {'nds': [], 'nes': [], 'snes': [], 'gc': [], 'n64': [], 'wii': [], 'gba': []}
-        self.eur_injectselections = {'nds': [], 'nes': [], 'snes': [], 'gc': [], 'n64': [], 'wii': [], 'gba': []}
-        self.jpn_injectselections = {'nds': [], 'nes': [], 'snes': [], 'gc': [], 'n64': [], 'wii': [], 'gba': []}
+        self.usa_injectselections = {'nds': [], 'nes': [], 'snes': [], 'gc': [], 'n64': [], 'wii': [], 'gba': [], 'wiiu': []}
+        self.eur_injectselections = {'nds': [], 'nes': [], 'snes': [], 'gc': [], 'n64': [], 'wii': [], 'gba': [], 'wiiu': []}
+        self.jpn_injectselections = {'nds': [], 'nes': [], 'snes': [], 'gc': [], 'n64': [], 'wii': [], 'gba': [], 'wiiu': []}
         self.filter_injectusa = tk.BooleanVar(value=True)
         self.filter_injecteur = tk.BooleanVar(value=True)
         self.filter_injectjpn = tk.BooleanVar(value=True)
@@ -305,6 +305,7 @@ class RootWindow(tk.Tk):
         self.filter_gba = tk.BooleanVar(value=True)
         self.filter_gc = tk.BooleanVar(value=True)
         self.filter_wii = tk.BooleanVar(value=True)
+        self.filter_wiiu = tk.BooleanVar(value=True)
         #self.injectdl_size_lbl = tk.StringVar(value=lang['Size:'])
         #self.total_injectdl_size = tk.StringVar(value=lang['Total size:'])
         self.errors = 0
@@ -317,8 +318,9 @@ class RootWindow(tk.Tk):
         t1_frm5 = ttk.Frame(tab1)
         t1_frm6 = ttk.Frame(tab1)
 
-        self.img = PhotoImage(file='logo.ppm')
-        ttk.Label(t1_frm1, image=self.img).pack()
+        #self.img = PhotoImage(file='logo.ppm')
+        self.logo = ttk.Label(t1_frm1)
+        self.logo.pack()
         ttk.Label(t1_frm2, justify='center',
                   text=lang[('This is a simple GUI by dojafoja that was written for Aco Wup Downloader.\nCredits to cearp,'
                              'cerea1killer,GeovanniMCh and all the Github contributors for writing Aco Wup Downloader.')]).pack()
@@ -776,6 +778,9 @@ class RootWindow(tk.Tk):
                         command=self.populate_injects_box).pack(padx=5, pady=5, side='left')
 
         ttk.Checkbutton(t7_frm1, text='Wii', variable=self.filter_wii,
+                        command=self.populate_injects_box).pack(padx=5, pady=5, side='left')
+
+        ttk.Checkbutton(t7_frm1, text='Wii U', variable=self.filter_wiiu,
                         command=self.populate_injects_box).pack(padx=5, pady=5, side='left')
                                                                                                 
         ttk.Label(t7_frm2, text=lang['Injects']+':', font='Helvetica 10 bold').pack(side='top', padx=45, pady=7, anchor='w')
@@ -1271,6 +1276,17 @@ class RootWindow(tk.Tk):
                 for i in self.jpn_injectselections['wii']:
                     self.injectselection_list.append(i)
 
+        if self.filter_wiiu.get():
+            if self.filter_injectusa.get():
+                for i in self.usa_injectselections['wiiu']:
+                    self.injectselection_list.append(i)
+            if self.filter_injecteur.get():
+                for i in self.eur_injectselections['wiiu']:
+                    self.injectselection_list.append(i)
+            if self.filter_injectjpn.get():
+                for i in self.jpn_injectselections['wiiu']:
+                    self.injectselection_list.append(i)
+
         if self.filter_gba.get():
             if self.filter_injectusa.get():
                 for i in self.usa_injectselections['gba']:
@@ -1478,7 +1494,7 @@ class RootWindow(tk.Tk):
                 cat = i['category']
                 nm = i['name']
                 
-                for each in ('nes','snes','n64','gba','wii','gc','nds'):
+                for each in ('nes','snes','n64','gba','wii', 'wiiu','gc','nds'):
                     if cat == each:
                         if rgn == 'USA':
                             self.usa_injectselections[each].append(nm)
@@ -1486,7 +1502,7 @@ class RootWindow(tk.Tk):
                         elif rgn == 'EUR':
                             self.eur_injectselections[each].append(nm)
 
-                        elif rgn == 'JPN':
+                        elif rgn == 'JPN' or rgn == 'JAP':
                            self.jpn_injectselections[each].append(nm)
                 
                 self.inject_dict[nm] = i
@@ -2025,7 +2041,11 @@ class RootWindow(tk.Tk):
     def set_theme(self,*args):
 
         sel_theme = self.selected_theme.get()
+        logo = themes[sel_theme].get('logo', None)
         
+        if not logo:
+            logo = 'logo.ppm'
+
         try:
             main = themes[sel_theme]['main']
             maintext = themes[sel_theme]['maintext']
@@ -2039,7 +2059,9 @@ class RootWindow(tk.Tk):
             maintext = 'black'
             box = 'white'
             boxtext = 'black'
-            
+
+        self.img = PhotoImage(file=logo)
+        self.logo.configure(image=self.img)    
         self.custom_entry_style.configure("EntryStyle.TEntry", foreground=boxtext, fieldbackground=box)       
         self.configure(background=main)
         self.selection_box.configure(background=box, foreground=boxtext)

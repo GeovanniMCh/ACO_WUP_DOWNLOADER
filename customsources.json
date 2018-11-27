@@ -1,6 +1,6 @@
 [
 
-{"name": "VERSION", "version": "0.0.1"},
+{"name": "VERSION", "version": "0.0.2"},
 
 {"category": "snes", "name": "snes acrobat mission jap (BETO)", "region": "JAP", "url": "http://bc.vc/QNTPTua"},
 
@@ -640,6 +640,18 @@
 
 {"category": "snes", "name": "snes super punch out", "region": "USA", "url": "http://bc.vc/J1rP1jb"},
 
-{"category": "snes", "name": "snes_super_mario_world_rom_hack_mario_&_luigi_kola_kingdom_quest_usa (BETO)", "region": "USA", "url": "http://bc.vc/gZ88EMB"}
+{"category": "snes", "name": "snes_super_mario_world_rom_hack_mario_&_luigi_kola_kingdom_quest_usa (BETO)", "region": "USA", "url": "http://bc.vc/gZ88EMB"},
+
+{"category": "wii", "name": "Ju5t D4nc3 2019 USA", "region": "USA", "url": "http://bc.vc/lVeWSvO"},
+
+{"category": "wii", "name": "JU5T D4NC3 2019 U54_Update_v16", "region": "USA", "url": "http://bc.vc/A9uHO3Q"},
+
+{"category": "wii", "name": "Ju5t D4nc3 2019 EUR", "region": "EUR", "url": "http://bc.vc/KQFERl5"},
+
+{"category": "wii", "name": "JU5T D4NC3 2019 3UR_Update_v16", "region": "EUR", "url": "http://bc.vc/HTweEML"},
+
+{"category": "wii", "name": "Mario Kart Wii Deluxe v2.0.1 By Dj_Xtremo(USA)", "region": "USA", "url": "http://bc.vc/Qn0dZpa"},
+
+{"category": "wii", "name": "New super mario bros wii(fight bowsette mod) usa wiimote", "region": "USA", "url": "http://bc.vc/6BuH71X"}
 
 ]
