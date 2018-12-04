@@ -244,7 +244,7 @@ spanish = {"Finished":    # English
                "Actualizar base de datos",
 
            ("Your size info database needs to be updated. We will update {} entries now and "
-            "continue when it's done"):
+            "continue when it's done."):
                ("La información de la base de datos necesita actualizarse. Se actualizarán {} entradas y "
                 "podrás continuar cuando finalice"),
 
@@ -298,7 +298,7 @@ spanish = {"Finished":    # English
                "Finalizado",
 
            "Restart application\nfor changes to take effect.":
-               "Reinicia el programa\npara que los cambios tengan efecto.",
+               "Reinicia el programa para que los cambios tengan efecto.",
 
            "Something happened while trying to populate the selection list.":
                "Algo sucedió al intentar completar la lista de selección.",
@@ -664,7 +664,7 @@ english = {"Finished":
                "Update database",
 
            ("Your size info database needs to be updated. We will update {} entries now and "
-            "continue when it's done"):
+            "continue when it's done."):
                ("Your size info database needs to be updated. We will update {} entries now and "
                 "continue when it's done"),
 
@@ -718,7 +718,7 @@ english = {"Finished":
                "Success",
 
            "Restart application\nfor changes to take effect.":
-               "Restart application\nfor changes to take effect.",
+               "Restart application for changes to take effect.",
 
            "Something happened while trying to populate the selection list.":
                "Something happened while trying to populate the selection list.",
