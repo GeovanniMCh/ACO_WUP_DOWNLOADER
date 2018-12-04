@@ -309,6 +309,7 @@ class RootWindow(tk.Tk):
         #self.injectdl_size_lbl = tk.StringVar(value=lang['Size:'])
         #self.total_injectdl_size = tk.StringVar(value=lang['Total size:'])
         self.errors = 0
+        self.raw_titlecount = 0
 
         # Tab 1
         t1_frm1 = ttk.Frame(tab1)
@@ -836,11 +837,10 @@ class RootWindow(tk.Tk):
                                                 'border':'1', 'sticky': 'nswe'})])
         self.load_settings()
         self.load_program_revisions()
-        
         self.toggle_widgets()
         self.load_title_sizes()
-        self.build_database()
         self.load_inject_data()
+        self.focus_force() # Was having weird issues with the Window mangager not giving focus sometimes
 
         
         if os.path.isfile('config.json'):
@@ -850,6 +850,7 @@ class RootWindow(tk.Tk):
                 self.populate_selection_list(download_data=False)
                 self.update_keysite_widgets()
                 #self.nb.select(self.tab2)
+        self.build_database()
                 
 
         ## Build an sqlite database of all the data in the titlekeys json as well as size information
@@ -863,22 +864,10 @@ class RootWindow(tk.Tk):
         # self.build_database(sizeonly=False)
 
     def build_database(self, sizeonly=True):
-        if len(self.title_sizes) >= len(self.title_data):
-            return
-
-        print('\n'+lang['Updating size information database now']+'.....\n')
         dataset = []
-        compare_ids = []
+        missing_ids = []
+        database_ids = []
         TK = fnku.TK
-
-        try:
-            update_count = len(self.title_data) - len(self.title_sizes)
-        except:
-            update_count = len(self.title_data)
-
-        message.showinfo(lang['Update database'],
-                         lang[('Your size info database needs to be updated. We will update {} entries now and '
-                               'continue when it\'s done.')].format(update_count), parent=self)
 
         if not os.path.isfile('data.db'):
             db = sqlite3.connect('data.db')
@@ -892,44 +881,57 @@ class RootWindow(tk.Tk):
         cursor.execute("SELECT title_id FROM titles")
 
         for i in cursor:
-            compare_ids.append(str(i[0]))
+            database_ids.append(str(i[0]))
 
-        loopcounter = 1
         for i in self.title_data:
-            if not str(i[2]) in compare_ids:
-                print(lang['Fetching database info, title {} of {}'].format(loopcounter, update_count))
-                name = i[0]
-                region = i[1]
-                tid = i[2]
-                tkey = i[3]
-                cont = i[4]
-                if tid in self.has_ticket:
-                    tick = 1
-                else:
-                    tick = 0
+            if not i[2] in database_ids:
+                missing_ids.append(i)
 
-                sz = 0
+        update_count = len(missing_ids)
+        if not update_count:
+            return
+
+        message.showinfo(lang['Update database'],
+                         lang[("Your size info database needs to be updated. We will update {} entries now "
+                               "and continue when it's done.")].format(update_count), parent=self)
+        
+        print('\n'+lang['Updating size information database now']+'.....\n')
+        
+        loopcounter = 1
+        for i in missing_ids:
+            print(lang['Fetching database info, title {} of {}'].format(loopcounter, update_count))
+            name = i[0]
+            region = i[1]
+            tid = i[2]
+            tkey = i[3]
+            cont = i[4]
+            if tid in self.has_ticket:
+                tick = 1
+            else:
+                tick = 0
+
+            sz = 0
+            total_size = 0
+            baseurl = 'http://ccs.cdn.c.shop.nintendowifi.net/ccs/download/{}'.format(tid)
+
+            if not fnku.download_file(baseurl + '/tmd', 'title.tmd', 1):
+                print(lang['ERROR: Could not download TMD'])
+            else:
+                with open('title.tmd', 'rb') as f:
+                    tmd = f.read()
+
+                content_count = int(binascii.hexlify(tmd[TK + 0x9E:TK + 0xA0]), 16)
                 total_size = 0
-                baseurl = 'http://ccs.cdn.c.shop.nintendowifi.net/ccs/download/{}'.format(tid)
+                for i in range(content_count):
+                    c_offs = 0xB04 + (0x30 * i)
+                    c_id = binascii.hexlify(tmd[c_offs:c_offs + 0x04]).decode()
+                    total_size += int(binascii.hexlify(tmd[c_offs + 0x08:c_offs + 0x10]), 16)
 
-                if not fnku.download_file(baseurl + '/tmd', 'title.tmd', 1):
-                    print(lang['ERROR']+': '+lang['Could not download TMD'])
-                else:
-                    with open('title.tmd', 'rb') as f:
-                        tmd = f.read()
+                sz = fnku.bytes2human(total_size)
+                os.remove('title.tmd')
 
-                    content_count = int(binascii.hexlify(tmd[TK + 0x9E:TK + 0xA0]), 16)
-                    total_size = 0
-                    for i in range(content_count):
-                        c_offs = 0xB04 + (0x30 * i)
-                        c_id = binascii.hexlify(tmd[c_offs:c_offs + 0x04]).decode()
-                        total_size += int(binascii.hexlify(tmd[c_offs + 0x08:c_offs + 0x10]), 16)
-
-                    sz = fnku.bytes2human(total_size)
-                    os.remove('title.tmd')
-
-                dataset.append((tid, tkey, name, region, cont, sz, total_size, tick))
-                loopcounter += 1
+            dataset.append((tid, tkey, name, region, cont, sz, total_size, tick))
+            loopcounter += 1
 
         if len(dataset) > 0:
             for i in dataset:
@@ -950,6 +952,8 @@ class RootWindow(tk.Tk):
 
         db.commit()
         db.close()
+        self.load_title_sizes()
+        self.populate_selection_list(download_data=False)
         message.showinfo(lang['Done'], lang['Done updatating database'], parent=self)
 
     def load_title_sizes(self):
@@ -1357,8 +1361,9 @@ class RootWindow(tk.Tk):
             self.t3_frm16.grid_remove()
 
 
-        # Parse the titlekeys.json file into categories and load them into dictionaries used by the program
+    # Parse the titlekeys.json file into categories and load them into dictionaries used by the program
     def load_title_data(self):
+        self.raw_titlecount = 0
         self.title_data = []
         try:
             if not os.path.isfile('titlekeys.json'):
@@ -1374,7 +1379,8 @@ class RootWindow(tk.Tk):
                 if i['name']:
                     titleid = i['titleID']
                     
-                    if self.title_sizes_raw.get(titleid, '0') == '0':  # Filter titles not available for download
+                    if self.title_sizes_raw.get(titleid, None) == '0':  # Filter titles not available for download
+                        self.raw_titlecount += 1
                         continue
                     
                     name = i['name'].lower().capitalize().strip().replace('\n',' ')
@@ -1454,7 +1460,9 @@ class RootWindow(tk.Tk):
                             elif content_type == lang['System'].upper():
                                 if not longname in self.jpn_selections['system']:
                                     self.jpn_selections['system'].append(longname)
-                
+
+                    self.raw_titlecount += 1
+                    
         except IOError as e:
             print(lang['Error']+':', e)
 

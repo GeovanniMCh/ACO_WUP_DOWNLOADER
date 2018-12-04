@@ -134,7 +134,8 @@ def download_file(url, outfname, retry_count=3, ignore_404=False, expected_size=
                 # We are ignoring this because its a 404 error, not a failure
                 return True
         except URLError:
-            resultsq.put(('log', lang['DOWNLOAD ERROR:']+' '+lang['Could not download {} for title {}'].format(os.path.split(outfname)[1],titleid)))
+            if resultsq:
+                resultsq.put(('log', lang['DOWNLOAD ERROR:']+' '+lang['Could not download {} for title {}'].format(os.path.split(outfname)[1],titleid)))
         else:
             return True
 
