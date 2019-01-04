@@ -12,16 +12,16 @@ spanish = {"Finished":    # English
                "Proceso {} terminado",    # Spanish
            
            "Thread {} failed to download {}.app for title {}":
-               "Proceso {} falló al descargar {}.app para el title {}",
+               "Proceso {} fallo al descargar {}.app para el title {}",
 
            "Thread {} finished downloading {}.app for title {}":
-               "Proceso {} finalizó la descarga de {}.app para el title {}",
+               "Proceso {} finalizo la descarga de {}.app para el title {}",
 
            "Thread {} failed to download {} for title {}":
-               "Proceso {} falló al descargar {} para el title {}",
+               "Proceso {} fallo al descargar {} para el title {}",
 
            "Thread {} finished downloading {} for title {}":
-               "Proceso {} finalizó la descarga de {} para el title {}",
+               "Proceso {} finalizo la descarga de {} para el title {}",
 
            "Welcome":
                "Bienvenido",
@@ -36,7 +36,7 @@ spanish = {"Finished":    # English
                "Actualizaciones",
 
            "Credits":
-               "Créditos",
+               "Creditos",
 
            "Progress":
                "Progreso",
@@ -51,7 +51,7 @@ spanish = {"Finished":    # English
 
            ("This is a simple GUI by dojafoja that was written for Aco Wup Downloader.\nCredits to cearp,"
             "cerea1killer,GeovanniMCh and all the Github contributors for writing Aco Wup Downloader."):
-               ("Esta es una GUI simple hecha por dojafoja para Aco Wup Downloader.\nCréditos a cearp,"
+               ("Esta es una GUI simple hecha por dojafoja para Aco Wup Downloader.\nCreditos a cearp,"
                 "cerea1killer,GeovanniMCh y a todos los contribuidores de Github por hacer Aco Wup Downloader."),
 
            ("If this is your first time running the program, you will need to provide the name"
@@ -82,7 +82,7 @@ spanish = {"Finished":    # English
                "Juego",
 
            "Update":
-               "Actualización",
+               "Actualizacion",
 
            "Demo":
                "Demo",
@@ -91,11 +91,11 @@ spanish = {"Finished":    # English
                "Sistema",
 
            "Only show items with a legit ticket":
-               "Mostrar solo contenido con ticket legítimo",
+               "Mostrar solo contenido con ticket legitimo",
 
            
            "Selection:":
-               "Selección:",
+               "seleccion:",
 
            "Search:":
                "Buscar:",
@@ -119,7 +119,7 @@ spanish = {"Finished":    # English
                "Lista de descarga:",
 
            "Remove selected":
-               "Remover selección",
+               "Remover seleccion",
 
            "Clear list":
                "Limpiar lista",
@@ -162,17 +162,17 @@ spanish = {"Finished":    # English
 
            ("Download legit tickets for titles when available and generate fake tickets for titles that do "
             "not have legit tickets"):
-               ("Descargar contenido con tikect legítimos cuando estén disponibles y generar un ticket falso "
+               ("Descargar contenido con tikect legitimos cuando estén disponibles y generar un ticket falso "
                 "para el contenido que no lo tenga"),
 
            "Only download titles with legit tickets and ignore all others:":
-               "Solo descargar contenido que tenga ticket legítimo el ignorar todo lo demás:",
+               "Solo descargar contenido que tenga ticket legitimo el ignorar todo lo demás:",
 
            "Auto-fetch game updates and dlc:":
-               "Autodetectar Juego, Actualización y DLC:",
+               "Autodetectar Juego, Actualizacion y DLC:",
 
            "When adding games to the download list, you can automatically fetch it's related update and dlc":
-               "Cuando agregues un Juego a la lista de descarga, automáticamente podras agregar su Actualización y DLC",
+               "Cuando agregues un Juego a la lista de descarga, automáticamente podras agregar su Actualizacion y DLC",
 
            "Disabled":
                "Desactivado",
@@ -235,7 +235,7 @@ spanish = {"Finished":    # English
                "Log:",
 
            "Credits:":
-               "Créditos:",
+               "Creditos:",
 
            "Updating size information database now":
                "Actualizando tamaño de la base de datos",
@@ -280,19 +280,19 @@ spanish = {"Finished":    # English
                 "ingrese un nuevo url. Recuerda, debes incluir\n http:// o https://"),
 
            "Updates are available in the updates tab":
-               "Hay una actualización disponible",
+               "Hay una Actualizacion disponible",
 
            "Error":
                "Error",
 
            "Update available":
-               "Actualización disponible",
+               "Actualizacion disponible",
 
            "An update is available for this program. Please see the updates tab to update.":
-               "Una actualización para este programa está disponible. Please see the updates tab to update.",
+               "Una Actualizacion para este programa está disponible. Please see the updates tab to update.",
 
            "No updates are currently available":
-               "No hay actualización disponible",
+               "No hay Actualizacion disponible",
 
            "Success":
                "Finalizado",
@@ -301,19 +301,19 @@ spanish = {"Finished":    # English
                "Reinicia el programa para que los cambios tengan efecto.",
 
            "Something happened while trying to populate the selection list.":
-               "Algo sucedió al intentar completar la lista de selección.",
+               "Algo sucedió al intentar completar la lista de seleccion.",
 
            "Downloading":
                "Descargando",
 
            "You did not provide a 16 digit title id":
-               "No se ingresó un Title ID de 16 digitos",
+               "No se ingreso un Title ID de 16 digitos",
 
            "Game update is available":
-               "Actualización de este Juego disponible",
+               "Actualizacion de este Juego disponible",
 
            "There is an update available for this game, would you like to add it to the list as well?":
-               "Hay una actualización disponible para este Juego, quieres agregarlo a la lista?",
+               "Hay una Actualizacion disponible para este Juego, quieres agregarlo a la lista?",
 
            "Game dlc is available":
                "DLC de este Juego disponible",
@@ -381,7 +381,7 @@ spanish = {"Finished":    # English
            ("When adding games to the download list, you can automatically fetch it's "
             "related update and dlc."):
                ("Cuando agregues un Juego a la lista de descarga, automáticamente puedes agregar"
-                "su Actualización y DLC."),
+                "su Actualizacion y DLC."),
 
            "Thread":
                "Proceso",
@@ -411,10 +411,10 @@ spanish = {"Finished":    # English
                "Injects",
 
            "Thread {} finished downloading {}":
-               "Proceso {} finalizó la descarga de {}",
+               "Proceso {} finalizo la descarga de {}",
 
            "Thread {} failed to download {}":
-               "Proceso {} falló al descargar {}"}
+               "Proceso {} fallo al descargar {}"}
 
 
 
