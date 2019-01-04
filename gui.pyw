@@ -47,7 +47,7 @@ except ImportError:
 
 ### Alucardianos team: Change the version of the program here. Make sure you do not change
 ### the format. It must stay exactly like it is. For example: 0.0.2, or 1.2.5, or 1.0.2, etc.
-__VERSION__ = "2.0.6"
+__VERSION__ = "2.0.7"
 
 targetversion = "Aco Wup Downloader" # This one can be anything you would like
 current_gui = LooseVersion(__VERSION__)
@@ -719,7 +719,7 @@ class RootWindow(tk.Tk):
         ttk.Label(t6_frm4, text=('MagnaDR'),font='Helvetica 15 bold').pack(side='left')
         ttk.Label(t6_frm5, text=('Dj_Xtremo'),font='Helvetica 15 bold').pack(side='left')
         ttk.Label(t6_frm6, text=('ThePixelMX'),font='Helvetica 15 bold').pack(side='left')
-        ttk.Label(t6_frm7, text='').pack(side='left')
+        ttk.Label(t6_frm7, text=('Jose Chirino'),font='Helvetica 15 bold').pack(side='left')
         ttk.Label(t6_frm8, text='').pack(side='left')
         ttk.Label(t6_frm9, text='').pack(side='left')
         ttk.Label(t6_frm10, text='').pack(side='left')
@@ -730,7 +730,7 @@ class RootWindow(tk.Tk):
         t6_frm4.grid(row=3, column=0, padx=10, pady=10)
         t6_frm5.grid(row=4, column=0, padx=10, pady=10)
         t6_frm6.grid(row=5, column=0, padx=10, pady=10)
-        t6_frm7.grid(row=6, column=1, padx=10, pady=10)
+        t6_frm7.grid(row=6, column=0, padx=10, pady=10)
         t6_frm8.grid(row=7, column=1, padx=10, pady=10)
         t6_frm9.grid(row=8, column=1, padx=10, pady=10)
         t6_frm10.grid(row=9, column=1, padx=10, pady=10)
