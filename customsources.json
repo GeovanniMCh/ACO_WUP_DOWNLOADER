@@ -1,6 +1,6 @@
 [
 
-{"name": "VERSION", "version": "0.0.2"},
+{"name": "VERSION", "version": "0.0.3"},
 
 {"category": "snes", "name": "snes acrobat mission jap (BETO)", "region": "JAP", "url": "http://bc.vc/QNTPTua"},
 
@@ -642,16 +642,536 @@
 
 {"category": "snes", "name": "snes_super_mario_world_rom_hack_mario_&_luigi_kola_kingdom_quest_usa (BETO)", "region": "USA", "url": "http://bc.vc/gZ88EMB"},
 
-{"category": "wii", "name": "Ju5t D4nc3 2019 USA", "region": "USA", "url": "http://bc.vc/lVeWSvO"},
-
-{"category": "wii", "name": "JU5T D4NC3 2019 U54_Update_v16", "region": "USA", "url": "http://bc.vc/A9uHO3Q"},
-
-{"category": "wii", "name": "Ju5t D4nc3 2019 EUR", "region": "EUR", "url": "http://bc.vc/KQFERl5"},
-
-{"category": "wii", "name": "JU5T D4NC3 2019 3UR_Update_v16", "region": "EUR", "url": "http://bc.vc/HTweEML"},
-
 {"category": "wii", "name": "Mario Kart Wii Deluxe v2.0.1 By Dj_Xtremo(USA)", "region": "USA", "url": "http://bc.vc/Qn0dZpa"},
 
-{"category": "wii", "name": "New super mario bros wii(fight bowsette mod) usa wiimote", "region": "USA", "url": "http://bc.vc/6BuH71X"}
+{"category": "wii", "name": "New super mario bros wii(fight bowsette mod) usa wiimote", "region": "USA", "url": "http://bc.vc/6BuH71X"},
+
+{"category": "n64", "name": "n64_007 The world is not engough usa (no sound)", "region": "USA", "url": "http://bc.vc/SXDhDiJ"},
+
+{"category": "n64", "name": "n64_1080_snowboarding_usa", "region": "USA", "url": "http://bc.vc/s6UBU2y"},
+
+{"category": "n64", "name": "n64_aidyn_chronicles_the_first_mage_usa", "region": "USA", "url": "http://bc.vc/aDNINv9"},
+
+{"category": "n64", "name": "n64_army_men_sarges_heroes_2_usa", "region": "USA", "url": "http://bc.vc/LHUxUfh"},
+
+{"category": "n64", "name": "n64_army_men_sarges_heroes_usa", "region": "USA", "url": "http://bc.vc/2GIAIBb"},
+
+{"category": "n64", "name": "n64_banjo_dreamie_usa", "region": "USA", "url": "http://bc.vc/GeRXRf9"},
+
+{"category": "n64", "name": "n64_banjo_kazooie_usa", "region": "USA", "url": "http://bc.vc/gTBtB9S"},
+
+{"category": "n64", "name": "n64_banjo_tooie_usa", "region": "USA", "url": "http://bc.vc/h5oNoym"},
+
+{"category": "n64", "name": "n64_bass_hunter_64_usa", "region": "USA", "url": "http://bc.vc/ur5m5bN"},
+
+{"category": "n64", "name": "n64_beetle_adventure_racing!_usa", "region": "USA", "url": "http://bc.vc/bLNXNfA"},
+
+{"category": "n64", "name": "n64_bomberman_64_the_second_attack_usa", "region": "USA", "url": "http://bc.vc/boEnEYH"},
+
+{"category": "n64", "name": "n64_bomberman_64_usa", "region": "USA", "url": "http://bc.vc/pdF1FEU"},
+
+{"category": "n64", "name": "n64_bomberman_hero_usa", "region": "USA", "url": "http://bc.vc/dOilix0"},
+
+{"category": "n64", "name": "n64_buck_bumble_usa", "region": "USA", "url": "http://bc.vc/8M8O852"},
+
+{"category": "n64", "name": "n64_bust_a_move_99_usa", "region": "USA", "url": "http://bc.vc/0kdedBL"},
+
+{"category": "n64", "name": "n64_castlevania_legacy_of_darkness_usa", "region": "USA", "url": "http://bc.vc/lkcmcjY"},
+
+{"category": "n64", "name": "n64_castlevania_usa", "region": "USA", "url": "http://bc.vc/tyD2DfO"},
+
+{"category": "n64", "name": "n64_chameleon_twist_usa", "region": "USA", "url": "http://bc.vc/12bGbo5"},
+
+{"category": "n64", "name": "n64_chopper_attack_usa", "region": "USA", "url": "http://bc.vc/rRsvs0p"},
+
+{"category": "n64", "name": "n64_destruction_derby_64_usa", "region": "USA", "url": "http://bc.vc/NlMsMXN"},
+
+{"category": "n64", "name": "n64_doom_64_usa", "region": "USA", "url": "http://bc.vc/7ShDhQd"},
+
+{"category": "n64", "name": "n64_dragon_ball_kart_64_usa", "region": "USA", "url": "http://bc.vc/MOwHwjs"},
+
+{"category": "n64", "name": "n64_duck_dodgers_starring_daffy_duck_usa", "region": "USA", "url": "http://bc.vc/HaNONIF"},
+
+{"category": "n64", "name": "n64_excitebike_64_usa", "region": "USA", "url": "http://bc.vc/88RzR6j"},
+
+{"category": "n64", "name": "n64_extreme_g_2_usa", "region": "USA", "url": "http://bc.vc/VI0U0r7"},
+
+{"category": "n64", "name": "n64_f_zero_x_climax_usa", "region": "USA", "url": "http://bc.vc/t2nDnu0"},
+
+{"category": "n64", "name": "n64_f_zero_x_usa", "region": "USA", "url": "http://bc.vc/0X4Q40C"},
+
+{"category": "n64", "name": "n64_gex_3_deep_cover_gecko_usa", "region": "USA", "url": "http://bc.vc/uZiViat"},
+
+{"category": "n64", "name": "n64_gex_64_enter_the_gecko_usa", "region": "USA", "url": "http://bc.vc/kvy5yEf"},
+
+{"category": "n64", "name": "n64_goemans_great_adventure_usa", "region": "USA", "url": "http://bc.vc/tOm4muj"},
+
+{"category": "n64", "name": "n64_harvest_moon_64_usa", "region": "USA", "url": "http://bc.vc/RxNCNL2"},
+
+{"category": "n64", "name": "n64_hybrid_heaven_usa", "region": "USA", "url": "http://bc.vc/5JjGjKh"},
+
+{"category": "n64", "name": "n64_iggys_reckin_balls_usa", "region": "USA", "url": "http://bc.vc/xcgvguh"},
+
+{"category": "n64", "name": "n64_indy_racing_2000_usa", "region": "USA", "url": "http://bc.vc/4KP4PLf"},
+
+{"category": "n64", "name": "n64_international_superstar_soccer_2000_usa", "region": "USA", "url": "http://bc.vc/qZjUj3w"},
+
+{"category": "n64", "name": "n64_international_superstar_soccer_64_usa", "region": "USA", "url": "http://bc.vc/4DE9Ey3"},
+
+{"category": "n64", "name": "n64_international_superstar_soccer_98_usa", "region": "USA", "url": "http://bc.vc/d6IMIox"},
+
+{"category": "n64", "name": "n64_international_track_and_field_2000_usa", "region": "USA", "url": "http://bc.vc/hhyGy51"},
+
+{"category": "n64", "name": "n64_killer_instinct_gold_usa", "region": "USA", "url": "http://bc.vc/ojJBJzT"},
+
+{"category": "n64", "name": "n64_kirby_64_usa", "region": "USA", "url": "http://bc.vc/x4VgVuU"},
+
+{"category": "n64", "name": "n64_lode_runner_3d_usa", "region": "USA", "url": "http://bc.vc/pOsHsS9"},
+
+{"category": "n64", "name": "n64_mario_golf_usa", "region": "USA", "url": "http://bc.vc/IytAt3v"},
+
+{"category": "n64", "name": "n64_mario_kart_64_usa", "region": "USA", "url": "http://bc.vc/9npdp8h"},
+
+{"category": "n64", "name": "n64_mario_party_usa", "region": "USA", "url": "http://bc.vc/Tl0B0cZ"},
+
+{"category": "n64", "name": "n64_mario_party_3_usa", "region": "USA", "url": "http://bc.vc/RFCWCqt"},
+
+{"category": "n64", "name": "n64_mario_tennis_usa", "region": "USA", "url": "http://bc.vc/y88w8UX"},
+
+{"category": "n64", "name": "n64_mega_man_64_usa", "region": "USA", "url": "http://bc.vc/YOOEOpx"},
+
+{"category": "n64", "name": "n64_micro_machines_64_turbo_usa", "region": "USA", "url": "http://bc.vc/ZllglbA"},
+
+{"category": "n64", "name": "n64_milos_astro_lanes_usa", "region": "USA", "url": "http://bc.vc/ozzdz30"},
+
+{"category": "n64", "name": "n64_mischief_makers_usa", "region": "USA", "url": "http://bc.vc/sNNnNJZ"},
+
+{"category": "n64", "name": "n64_monster_truck_madness_64_usa", "region": "USA", "url": "http://bc.vc/kSSKSqZ"},
+
+{"category": "n64", "name": "n64_mystical_ninja_starring_goemon_usa", "region": "USA", "url": "http://bc.vc/DwwGw8n"},
+
+{"category": "n64", "name": "n64_nfl_blitz_2000_usa", "region": "USA", "url": "http://bc.vc/Auu8u3o"},
+
+{"category": "n64", "name": "n64_nfl_blitz_2001_usa", "region": "USA", "url": "http://bc.vc/Hjj7jQ8"},
+
+{"category": "n64", "name": "n64_nfl_blitz_special_edition_usa", "region": "USA", "url": "http://bc.vc/DrrTrNe"},
+
+{"category": "n64", "name": "n64_nfl_blitz_usa", "region": "USA", "url": "http://bc.vc/U55g5Av"},
+
+{"category": "n64", "name": "n64_nuclear_strike_64_usa", "region": "USA", "url": "http://bc.vc/cEEPE2p"},
+
+{"category": "n64", "name": "n64_ogre_battle_64_person_of_lordly_caliber_usa", "region": "USA", "url": "http://bc.vc/lo898Aa"},
+
+{"category": "n64", "name": "n64_paperboy_usa", "region": "USA", "url": "http://bc.vc/LiDLDfr"},
+
+{"category": "n64", "name": "n64_paper_mario_pro_mode_usa", "region": "USA", "url": "http://bc.vc/Yd0M0cV"},
+
+{"category": "n64", "name": "n64_pokemon_puzzle_league_usa", "region": "USA", "url": "http://bc.vc/nrnSnQz"},
+
+{"category": "n64", "name": "n64_pokemon_snap_usa", "region": "USA", "url": "http://bc.vc/DA9c9ld"},
+
+{"category": "n64", "name": "n64_pokemon_stadium_2_usa", "region": "USA", "url": "http://bc.vc/R6sFs1q"},
+
+{"category": "n64", "name": "n64_pokemon_stadium_kaizo_usa", "region": "USA", "url": "http://bc.vc/jEwow7d"},
+
+{"category": "n64", "name": "n64_pokemon_stadium_usa", "region": "USA", "url": "http://bc.vc/hmUyUhV"},
+
+{"category": "n64", "name": "n64_quest_64_usa", "region": "USA", "url": "http://bc.vc/b5202rq"},
+
+{"category": "n64", "name": "n64_rampage_world_tour_usa", "region": "USA", "url": "http://bc.vc/NZYCYst"},
+
+{"category": "n64", "name": "n64_road_rash_64_usa", "region": "USA", "url": "http://bc.vc/MGflfIM"},
+
+{"category": "n64", "name": "n64_robotron_64_usa", "region": "USA", "url": "http://bc.vc/izdBd6Z"},
+
+{"category": "n64", "name": "n64_rocket_robot_on_wheels_usa", "region": "USA", "url": "http://bc.vc/vyaYaCM"},
+
+{"category": "n64", "name": "n64_rr64_ridge_racer_64_usa", "region": "USA", "url": "http://bc.vc/7L181MH"},
+
+{"category": "n64", "name": "n64_san_franscisco_rush_extreme_racing_usa", "region": "USA", "url": "http://bc.vc/HHIEIYg"},
+
+{"category": "n64", "name": "n64_scooby_doo!_classic_creep_capers_usa", "region": "USA", "url": "http://bc.vc/rQtutLm"},
+
+{"category": "n64", "name": "n64_sin_and_punishment_usa", "region": "USA", "url": "http://bc.vc/pMJGJy6"},
+
+{"category": "n64", "name": "n64_snowboard_kids_2_usa", "region": "USA", "url": "http://bc.vc/jlHKHjL"},
+
+{"category": "n64", "name": "n64_space_invaders_usa", "region": "USA", "url": "http://bc.vc/8B262YV"},
+
+{"category": "n64", "name": "n64_star_fox_64_usa", "region": "USA", "url": "http://bc.vc/XbGAGjk"},
+
+{"category": "n64", "name": "n64_super_mario_64_3d_world_usa", "region": "USA", "url": "http://bc.vc/GVlWl36"},
+
+{"category": "n64", "name": "n64_super_mario_64_usa", "region": "USA", "url": "http://bc.vc/xc0f0m5"},
+
+{"category": "n64", "name": "n64_super_mario_odyssey_64_multiplayer_usa", "region": "USA", "url": "http://bc.vc/rCdcduL"},
+
+{"category": "n64", "name": "n64_super_mario_odyssey_64_v3_usa", "region": "USA", "url": "http://bc.vc/DEfufmY"},
+
+{"category": "n64", "name": "n64_super_mario_odyssey_64_v4_usa", "region": "USA", "url": "http://bc.vc/OF8p8jZ"},
+
+{"category": "n64", "name": "n64_super_smash_bros_usa", "region": "USA", "url": "http://bc.vc/wMtktTA"},
+
+{"category": "n64", "name": "n64_super_w00ting_mario_kart_64_usa", "region": "USA", "url": "http://bc.vc/LHxpxXb"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_masked Quest_usa", "region": "USA", "url": "http://bc.vc/4XpMp5I"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_master_quest_usa", "region": "USA", "url": "http://bc.vc/2lLULR4"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_randomizer_usa", "region": "USA", "url": "http://bc.vc/OS1h10z"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_usa", "region": "USA", "url": "http://bc.vc/aEs6sLr"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_master_quest_multiplayer_usa", "region": "USA", "url": "http://bc.vc/MGsuso7"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_randomizer_usa", "region": "USA", "url": "http://bc.vc/TMPfPOU"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_usa", "region": "USA", "url": "http://bc.vc/0KE1EXn"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_v1.0_usa", "region": "USA", "url": "http://bc.vc/I4WkWdV"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_zeldas_eternal_youth_usa", "region": "USA", "url": "http://bc.vc/mKtQtRr"},
+
+{"category": "n64", "name": "n64_tom_and_jerry_in_fists_of_furry_usa", "region": "USA", "url": "http://bc.vc/ncf5frk"},
+
+{"category": "n64", "name": "n64_tom_clancys_rainbow_six_usa", "region": "USA", "url": "http://bc.vc/m7FmFxO"},
+
+{"category": "n64", "name": "n64_tonic_trouble_usa", "region": "USA", "url": "http://bc.vc/GPJpJua"},
+
+{"category": "n64", "name": "n64_virtual_chess_64_usa", "region": "USA", "url": "http://bc.vc/TLnunxj"},
+
+{"category": "n64", "name": "n64_waialae_country_club_true_golf_classics_usa", "region": "USA", "url": "http://bc.vc/jROlO9C"},
+
+{"category": "n64", "name": "n64_waluigis_taco_stand_64_usa", "region": "USA", "url": "http://bc.vc/BwPRPyC"},
+
+{"category": "n64", "name": "n64_wayne_gretzkys_3d_hockey_98_usa", "region": "USA", "url": "http://bc.vc/9P505ba"},
+
+{"category": "n64", "name": "n64_wayne_gretzkys_3d_hockey_usa", "region": "USA", "url": "http://bc.vc/eEPqPQL"},
+
+{"category": "n64", "name": "n64_winback_covert_operations_usa", "region": "USA", "url": "http://bc.vc/xBErEJK"},
+
+{"category": "n64", "name": "n64_yoshis_story_usa", "region": "USA", "url": "http://bc.vc/ZwRiRhJ"},
+
+{"category": "n64", "name": "\nn64_1080_snowboarding_eur", "region": "EUR", "url": "http://bc.vc/PX7RGQ1"},
+
+{"category": "n64", "name": "n64_aerogauge_eur", "region": "EUR", "url": "http://bc.vc/h5IUgzX"},
+
+{"category": "n64", "name": "n64_banjo_kazooie_esp", "region": "EUR", "url": "http://bc.vc/3nmQwE0"},
+
+{"category": "n64", "name": "n64_banjo_tooie_eur", "region": "EUR", "url": "http://bc.vc/E78NDXF"},
+
+{"category": "n64", "name": "n64_donkey_kong_64_eur", "region": "EUR", "url": "http://bc.vc/B10xIZm"},
+
+{"category": "n64", "name": "n64_lylat_wars_eur", "region": "EUR", "url": "http://bc.vc/o4PlEOJ"},
+
+{"category": "n64", "name": "n64_paper_mario_eur", "region": "EUR", "url": "http://bc.vc/oJ6IhF2"},
+
+{"category": "n64", "name": "n64_pokemon_snap_eur", "region": "EUR", "url": "http://bc.vc/rTslPCF"},
+
+{"category": "n64", "name": "n64_premier_manager_64_eur", "region": "EUR", "url": "http://bc.vc/WXWjhaV"},
+
+{"category": "n64", "name": "n64_rakuga_kids_eur", "region": "EUR", "url": "http://bc.vc/PcbrP6s"},
+
+{"category": "n64", "name": "n64_super_mario_64_esp", "region": "EUR", "url": "http://bc.vc/NHTJ6RK"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_eur", "region": "EUR", "url": "http://bc.vc/GPleRLO"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_esp", "region": "EUR", "url": "http://bc.vc/8tLkJNF"},
+
+{"category": "n64", "name": "n64_chameleon_twist_eng", "region": "JPN", "url": "http://bc.vc/wIDQCT5"},
+
+{"category": "n64", "name": "n64_custom_robo_eng", "region": "JPN", "url": "http://bc.vc/Xsp1kQB"},
+
+{"category": "n64", "name": "n64_custom_robo_jap", "region": "JPN", "url": "http://bc.vc/Ak7ayD6"},
+
+{"category": "n64", "name": "n64_custom_robo_v2_jap", "region": "JPN", "url": "http://bc.vc/aLgkW3Z"},
+
+{"category": "n64", "name": "n64_doraemon_nobita_to_3tsu_no_seireiseki_jap", "region": "JPN", "url": "http://bc.vc/fZX3oCq"},
+
+{"category": "n64", "name": "n64_eltale_monsters_jap", "region": "JPN", "url": "http://bc.vc/ggmd2Jh"},
+
+{"category": "n64", "name": "n64_fushigi_no_dungeon_fuurai_no_shiren_2_oni_shuurai!_shiren_jou!_jap", "region": "JPN", "url": "http://bc.vc/UR5e4fK"},
+
+{"category": "n64", "name": "n64_j_league_eleven_beat_1997_jap", "region": "JPN", "url": "http://bc.vc/9LlgnQj"},
+
+{"category": "n64", "name": "n64_puyo_puyo_sun_64_jap", "region": "JPN", "url": "http://bc.vc/UeAzBkG"},
+
+{"category": "n64", "name": "n64_super_mario_64_shindou_edition_jap", "region": "JPN", "url": "http://bc.vc/1cAQv3Y"},
+
+{"category": "n64", "name": "n64_super_robot_taisen_64_jap", "region": "JPN", "url": "http://bc.vc/JapzAtG"},
+
+{"category": "n64", "name": "n64_wonder_project_j2_eng", "region": "JPN", "url": "http://bc.vc/nRFAsBE"},
+
+{"category": "n64", "name": "n64_zelda_no_densetsu_mujura_no_kamen_jap", "region": "JPN", "url": "http://bc.vc/SUhVkYW"},
+
+{"category": "n64", "name": "n64_1080_snowboarding_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/kx4hACT"},
+
+{"category": "n64", "name": "n64_army_men_sarges_heroes_2_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/76avlQd"},
+
+{"category": "n64", "name": "n64_army_men_sarges_heroes_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/9wDxkYv"},
+
+{"category": "n64", "name": "n64_banjo_dreamie_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/9u7Ayjw"},
+
+{"category": "n64", "name": "n64_banjo_kazooie_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/j6ukp5W"},
+
+{"category": "n64", "name": "n64_banjo_tooie_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/qCjrzok"},
+
+{"category": "n64", "name": "n64_bomberman_64_the_second_attack_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/gJlxnqj"},
+
+{"category": "n64", "name": "n64_bomberman_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/ge8PavF"},
+
+{"category": "n64", "name": "n64_bomberman_hero_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/UMiORfW"},
+
+{"category": "n64", "name": "n64_castlevania_legacy_of_darkness_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/S6v8Mgp"},
+
+{"category": "n64", "name": "n64_chameleon_twist_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/9kNRp1z"},
+
+{"category": "n64", "name": "n64_donkey_kong_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/7whcAlB"},
+
+{"category": "n64", "name": "n64_doom_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/fpIa9zY"},
+
+{"category": "n64", "name": "n64_excitebike_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/mIiRfQV"},
+
+{"category": "n64", "name": "n64_f_zero_x_climax_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/EMSFrl9"},
+
+{"category": "n64", "name": "n64_f_zero_x_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/1ZvKwj7"},
+
+{"category": "n64", "name": "n64_goemans_great_adventure_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/txw65yY"},
+
+{"category": "n64", "name": "n64_harvest_moon_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/zlOS42u"},
+
+{"category": "n64", "name": "n64_hybrid_heaven_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/S0nDF9q"},
+
+{"category": "n64", "name": "n64_international_superstar_soccer_98_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/3okUHoF"},
+
+{"category": "n64", "name": "n64_killer_instinct_gold_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/YrgXCr6"},
+
+{"category": "n64", "name": "n64_kirby_64_usa_disdabled_dark_filter", "region": "USA", "url": "http://bc.vc/9aGyha8"},
+
+{"category": "n64", "name": "n64_mario_golf_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/djDwJjM"},
+
+{"category": "n64", "name": "n64_mario_party_2_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/t23BR2X"},
+
+{"category": "n64", "name": "n64_mario_party_3_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/Js7uMsg"},
+
+{"category": "n64", "name": "n64_mario_party_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/TcKyBcq"},
+
+{"category": "n64", "name": "n64_m4r10_k4rt_64_usa_disabled_dark_filter", "region": "USA", "url": "http://metastead.com/A4xz"},
+
+{"category": "n64", "name": "n64_m4r10_k4rt_64_ES_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/0BvJbN8"},
+
+{"category": "n64", "name": "n64_mario_tennis_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/b3GVey9"},
+
+{"category": "n64", "name": "n64_milos_astro_lanes_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/EXeczN3"},
+
+{"category": "n64", "name": "n64_mischief_makers_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/F3QCyFm"},
+
+{"category": "n64", "name": "n64_mystical_ninja_starring_goemon_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/fLaPDlT"},
+
+{"category": "n64", "name": "n64_ogre_battle_64_person_of_lordly_caliber_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/4KkC8ia"},
+
+{"category": "n64", "name": "n64_paper_mario_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/gxXynW3"},
+
+{"category": "n64", "name": "n64_pokemon_snap_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/SEu5Ja7"},
+
+{"category": "n64", "name": "n64_quest_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/v3BkuzW"},
+
+{"category": "n64", "name": "n64_robotron_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/EkvcdBV"},
+
+{"category": "n64", "name": "n64_rocket_robot_on_wheels_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/W5HPGg9"},
+
+{"category": "n64", "name": "n64_rr64_ridge_racer_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/YHL3PJ1"},
+
+{"category": "n64", "name": "n64_scooby_doo!_classic_creep_capers_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/cQbVDyF"},
+
+{"category": "n64", "name": "n64_sin_and_punishment_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/jy6uYX9"},
+
+{"category": "n64", "name": "n64_snowboard_kids_2_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/lEE6fjt"},
+
+{"category": "n64", "name": "n64_star_fox_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/GPP5TyW"},
+
+{"category": "n64", "name": "n64_super_mario_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/bkkmogV"},
+
+{"category": "n64", "name": "n64_super_smash_bros_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/Fff2tbi"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_masked Quest_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/yLLCvne"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_master_quest_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/t99XasH"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_randomizer_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/h99kOVe"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/iKKHaTl"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_master_quest_multiplayer_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/foUYzuQ"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_randomizer_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/wUTfhW6"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/MK3FJvp"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_v1.0_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/sREy4LZ"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_zeldas_birthday_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/11mszVe"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_zeldas_eternal_youth_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/ByWrHpe"},
+
+{"category": "n64", "name": "n64_tonic_trouble_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/1PLnilY"},
+
+{"category": "n64", "name": "n64_wave_race_64_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/DpcFyIC"},
+
+{"category": "n64", "name": "n64_wayne_gretzkys_3d_hockey_98_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/QAlor4k"},
+
+{"category": "n64", "name": "n64_yoshis_story_usa_disabled_dark_filter", "region": "USA", "url": "http://bc.vc/c6bWhJm"},
+
+{"category": "n64", "name": "n64_1080_snowboarding_eur_disabled_dark_filter", "region": "EUR", "url": "http://bc.vc/bJC96rw"},
+
+{"category": "n64", "name": "n64_banjo_kazooie_esp_disabled_dark_filter", "region": "EUR", "url": "http://bc.vc/yD30cQ5"},
+
+{"category": "n64", "name": "n64_banjo_tooie_eur_disabled_dark_filter", "region": "EUR", "url": "http://bc.vc/gfXOVny"},
+
+{"category": "n64", "name": "n64_donkey_kong_64_eur_disabled_dark_filter", "region": "EUR", "url": "http://bc.vc/gGufTpV"},
+
+{"category": "n64", "name": "n64_pokemon_snap_eur_disabled_dark_filter", "region": "EUR", "url": "http://bc.vc/f2Xj3MF"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_esp_disabled_dark_fitler", "region": "EUR", "url": "http://bc.vc/AjW6oaP"},
+
+{"category": "n64", "name": "n64_chameleon_twist_eng_disabled_dark_filter", "region": "JPN", "url": "http://bc.vc/WOijJWX"},
+
+{"category": "n64", "name": "n64_1080_snowboarding_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/hG27jmt"},
+
+{"category": "n64", "name": "n64_army_men_sarges_heroes_2_usa_disabled_dark_filter_ws ", "region": "USA", "url": "http://bc.vc/xf6wQ9F"},
+
+{"category": "n64", "name": "n64_army_men_sarges_heroes_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/O1lBkxg"},
+
+{"category": "n64", "name": "n64_banjo_dreamie_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/rrY2qQp"},
+
+{"category": "n64", "name": "n64_banjo_kazooie_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/4mFfZwq"},
+
+{"category": "n64", "name": "n64_banjo_tooie_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/pl3jyVZ"},
+
+{"category": "n64", "name": "n64_bomberman_64_the_second_attack_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/7RfLwmu"},
+
+{"category": "n64", "name": "n64_bomberman_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/HzqpWFh"},
+
+{"category": "n64", "name": "n64_bomberman_hero_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/rHW93Jt"},
+
+{"category": "n64", "name": "n64_bust_a_move_2_arcade_edition_usa", "region": "USA", "url": "http://bc.vc/BaB1cLM"},
+
+{"category": "n64", "name": "n64_castlevania_legacy_of_darkness_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/eeuNQZ7"},
+
+{"category": "n64", "name": "n64_castlevania_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/fTdc6uR"},
+
+{"category": "n64", "name": "n64_chameleon_twist_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/SciIbKy"},
+
+{"category": "n64", "name": "n64_donkey_kong_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/GgjfdPN"},
+
+{"category": "n64", "name": "n64_doom_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/5Bj6A57"},
+
+{"category": "n64", "name": "n64_excitebike_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/vawVlBM"},
+
+{"category": "n64", "name": "n64_f_zero_x_climax_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/NmzibeX"},
+
+{"category": "n64", "name": "n64_f_zero_x_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/waHUMrF"},
+
+{"category": "n64", "name": "n64_goemans_great_adventure_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/Y1ASleo"},
+
+{"category": "n64", "name": "n64_harvest_moon_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/1EamO4K"},
+
+{"category": "n64", "name": "n64_hybrid_heaven_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/mdj0M5c"},
+
+{"category": "n64", "name": "n64_international_superstar_soccer_98_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/co4qk18"},
+
+{"category": "n64", "name": "n64_killer_instinct_gold_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/y8boJDv"},
+
+{"category": "n64", "name": "n64_kirby_64_usa_disdabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/dVH0QuY"},
+
+{"category": "n64", "name": "n64_mario_golf_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/Tm3hQoa"},
+
+{"category": "n64", "name": "n64_mario_kart_64_usa_diabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/8c36hUv"},
+
+{"category": "n64", "name": "n64_m4r10_k4rt_64_ES_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/ArhwNq2"},
+
+{"category": "n64", "name": "n64_mario_party_2_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/XGfaboT"},
+
+{"category": "n64", "name": "n64_mario_party_3_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/WCQ67XI"},
+
+{"category": "n64", "name": "n64_mario_party_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/5DO0txY"},
+
+{"category": "n64", "name": "n64_mario_tennis_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/OY9Ilmp"},
+
+{"category": "n64", "name": "n64_milos_astro_lanes_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/5H61CBu"},
+
+{"category": "n64", "name": "n64_mischief_makers_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/gaYkDyJ"},
+
+{"category": "n64", "name": "n64_mystical_ninja_starring_goemon_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/N1pXELS"},
+
+{"category": "n64", "name": "n64_ogre_battle_64_person_of_lordly_caliber_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/BPls0No"},
+
+{"category": "n64", "name": "n64_paper_mario_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/hgkWVNs"},
+
+{"category": "n64", "name": "n64_pokemon_snap_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/dsbSz1F"},
+
+{"category": "n64", "name": "n64_quest_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/bJoX61K"},
+
+{"category": "n64", "name": "n64_robotron_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/DHuI7L6"},
+
+{"category": "n64", "name": "n64_rocket_robot_on_wheels_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/MsAcxw0"},
+
+{"category": "n64", "name": "n64_rr64_ridge_racer_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/YQ6qaZR"},
+
+{"category": "n64", "name": "n64_scooby_doo!_classic_creep_capers_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/o7MqQ0I"},
+
+{"category": "n64", "name": "n64_sin_and_punishment_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/jHqiGDZ"},
+
+{"category": "n64", "name": "n64_snowboard_kids_2_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/Sk8QpG6"},
+
+{"category": "n64", "name": "n64_star_fox_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/OS0j8fh"},
+
+{"category": "n64", "name": "n64_super_mario_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/DjF8pG1"},
+
+{"category": "n64", "name": "n64_super_smash_bros_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/zJPL2l4"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_masked Quest_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/lQs0zur"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_master_quest_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/TqAc3Ti"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_randomizer_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/JafgsFI"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_majoras_mask_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/sauMjI1"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_master_quest_multiplayer_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/kJH9dIu"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/4XjLVM5"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_randomizer_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/zXhgjVN"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_v1.0_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/fi0CSOV"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_zeldas_birthday_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/YgUOAk8"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_zeldas_eternal_youth_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/IIKrlsV"},
+
+{"category": "n64", "name": "n64_tom_and_jerry_in_fists_of_furry_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/gduhxTL"},
+
+{"category": "n64", "name": "n64_tonic_trouble_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/WsmhN2r"},
+
+{"category": "n64", "name": "n64_wave_race_64_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/Qq4GOBo"},
+
+{"category": "n64", "name": "n64_wayne_gretzkys_3d_hockey_98_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/DtQJD43"},
+
+{"category": "n64", "name": "n64_yoshis_story_usa_disabled_dark_filter_ws", "region": "USA", "url": "http://bc.vc/VeRrYiH"},
+
+{"category": "n64", "name": "n64_1080_snowboarding_eur_disabled_dark_filter_ws", "region": "EUR", "url": "http://bc.vc/1wsnxHY"},
+
+{"category": "n64", "name": "n64_banjo_kazooie_esp_disabled_dark_filter_ws", "region": "EUR", "url": "http://bc.vc/xvSJZjq"},
+
+{"category": "n64", "name": "n64_banjo_tooie_eur_disabled_dark_filter_ws", "region": "EUR", "url": "http://bc.vc/7U7H5L1"},
+
+{"category": "n64", "name": "n64_donkey_kong_64_eur_disabled_dark_filter_ws", "region": "EUR", "url": "http://bc.vc/lEGb3Vz"},
+
+{"category": "n64", "name": "n64_pokemon_snap_eur_disabled_dark_filter_ws", "region": "EUR", "url": "http://bc.vc/T7SD2wl"},
+
+{"category": "n64", "name": "n64_the_legend_of_zelda_ocarina_of_time_esp_disabled_dark_fitler_ws", "region": "EUR", "url": "http://bc.vc/D0NlE2M"},
+
+{"category": "n64", "name": "n64_chameleon_twist_eng_disabled_dark_filter_ws", "region": "JPN", "url": "http://bc.vc/FHE16ov"}
 
 ]
