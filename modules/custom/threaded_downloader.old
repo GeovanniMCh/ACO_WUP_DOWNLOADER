@@ -1,0 +1,106 @@
+import threading
+from modules.custom import FunKiiU_mod as fnku
+
+class DownloadSession():
+    def __init__(self, jobQ, resultQ, abortQ, threadcount, gui):
+        self.threads = []
+        self.jobQ = jobQ
+        self.resultQ = resultQ
+        self.threadcount = threadcount
+        #self.
+
+        for i in range(1, threadcount + 1):
+            self.threads.append(DownloadWorker(jobQ, resultQ, abortQ, str(i), gui))
+
+    def start_session(self):
+        for i in self.threads:
+            i.start()
+
+    def populate_job(self, joblist):
+        for i in joblist:
+            for job in i:
+                self.jobQ.put(job)
+
+    def poison_threads(self):
+        for i in range(self.threadcount):
+            self.jobQ.put(None)  # A poison pill to kill each thread
+
+
+# A Multithread download 'worker'. Using threads should improve download speeds but may
+# cause servers to drop the connection with an 'Error 104, Connection reset by peer'
+# when too many threads are downloading at once. More testing is needed to determine an
+# optimum number of concurrent downloads.
+class DownloadWorker(threading.Thread):
+    def __init__(self, jobQ, resultQ, abortQ, thread_id, gui):
+        threading.Thread.__init__(self)
+        self.jobQ = jobQ
+        self.resultQ = resultQ
+        self.abortQ = abortQ
+        self.daemon = True
+        self.thread_id = thread_id
+        self.lang = gui.get_gui_language()
+        self.gui = gui
+        
+
+    def run(self):
+        lang = self.lang
+        while True:
+            if not self.abortQ.empty():
+                self.resultQ.put(('log', lang['Thread {} has been stopped by the user'].format(self.thread_id)))
+                self.resultQ.put(('aborted', job))
+                self.resultQ.put(('fail', '', title_id))
+                self.resultQ.put(('thread died',))
+                return
+            if not self.jobQ.empty():
+                job = self.jobQ.get()
+                if not job:
+                    self.resultQ.put(('status', self.thread_id, lang['Finished']))
+                    self.resultQ.put(('log', lang['Thread {} has terminated'].format(self.thread_id)))
+                    self.resultQ.put(('thread died',))
+                    break
+
+                else:
+                    title_id = job[0][4]
+                    if job[0][4] in self.gui.failed_downloads:
+                        self.resultQ.put(('progress', job[0][3]))
+                        continue
+    
+                    app = job[0]
+                    h3 = job[1]
+
+
+                    # Attempt to download .app file
+                    
+                    rslt = fnku.download_file(app[0], app[1], app[2], expected_size=app[3], resultsq=self.resultQ, abortq=self.abortQ,
+                                              titleid=title_id, threadid=self.thread_id)
+                    if not rslt:
+                        self.resultQ.put(('fail', '{}.app'.format(app[0].split('/')[6]), title_id))
+                        self.resultQ.put(
+                            ('log', lang['DOWNLOAD ERROR:']+' '+lang['Thread {} failed to download {}.app for title {}'].format(
+                                self.thread_id, app[0].split('/')[6], title_id)))
+                        
+                    elif rslt == 'aborted':                      
+                        self.resultQ.put(('aborted', job))
+                        self.resultQ.put(('fail', '', title_id))
+                        self.resultQ.put(('thread died',))
+
+                    elif rslt == 'skipped':
+                        pass # ignore for now.
+
+                    else:
+                        self.resultQ.put(
+                            ('log', lang['Thread {} finished downloading {}.app for title {}'].format(self.thread_id,
+                                                                                                app[0].split('/')[6],
+                                                                                                title_id)))
+
+                    # Attempt to download .h3 file
+                    if not fnku.download_file(h3[0], h3[1], h3[2], ignore_404=h3[3], resultsq=self.resultQ, abortq=self.abortQ,
+                                              titleid=title_id, threadid=self.thread_id):
+                        self.resultQ.put(('fail', '{}'.format(h3[0].split('/')[6]), title_id))
+                        self.resultQ.put(('log', lang['DOWNLOAD ERROR:']+' '+lang['Thread {} failed to download {} for title {}'].format(
+                            self.thread_id, h3[0].split('/')[6], title_id)))
+                    else:
+                        self.resultQ.put(
+                            ('log', lang['Thread {} finished downloading {} for title {}'].format(self.thread_id,
+                                                                                            h3[0].split('/')[6],
+                                                                                            title_id)))
