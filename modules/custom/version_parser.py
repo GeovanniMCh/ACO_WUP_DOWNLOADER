@@ -11,5 +11,5 @@ class VersionParser(HTMLParser):
         if tag == "a":
             for name, value in attrs:
                 if name == "href":
-                    if value.startswith("/dojafoja/FunKii-UI") and value.endswith(".zip"):
+                    if value.startswith("GeovanniMCh/ACO_WUP_DOWNLOADER") and value.endswith(".zip"):
                         self.gui_data_set.append(value)

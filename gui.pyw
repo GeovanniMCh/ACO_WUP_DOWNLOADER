@@ -69,7 +69,7 @@ from modules.frames import updates_tab
 from modules.frames import progress_tab
 from modules.custom.version_parser import VersionParser
 from modules.custom.threaded_downloader import DownloadSession
-from modules.custom import FunKiiU_mod as fnku
+from modules.custom import ACOWD_mod as fnku
 
 __VERSION__ = "3.0.0"
 
@@ -93,9 +93,9 @@ class RootWindow(tk.Tk):
     def __init__(self, *args, **kwargs):
         tk.Tk.__init__(self)
         
-        self.versions = {'gui_new': '', 'gui_all': '', 'gui_url': 'https://github.com/dojafoja/FunKii-UI/releases'}
+        self.versions = {'gui_new': '', 'gui_all': '', 'gui_url': 'https://github.com/GeovanniMCh/ACO_WUP_DOWNLOADER/releases'}
         self.runningversion = __VERSION__
-        self.targetversion = "FunKiiU mod"
+        self.targetversion = "ACOWD mod"
         
         self.nb = ttk.Notebook(self)
         self.nb.pack(fill="both", expand=True)

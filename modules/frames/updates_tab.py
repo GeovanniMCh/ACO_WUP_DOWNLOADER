@@ -4,7 +4,7 @@ try:
 except ImportError:
     from tkinter import ttk, Listbox, Scale
 
-from modules.custom.FunKiiU_mod import __VERSION__ as fnku_version
+from modules.custom.ACOWD_mod import __VERSION__ as fnku_version
 
 
 
@@ -37,7 +37,7 @@ class UpdatesTab(ttk.Frame):
                    command=lambda: gui.update_application('gui', gui.versions['gui_new'])).pack(padx=5, pady=1,
                                                                                                   side='left')
 
-        ttk.Label(t4_frm7, text='FunKiiU ' + lang['application:'], font="Helvetica 13 bold").pack(padx=5, pady=5, side='left')
+        ttk.Label(t4_frm7, text='ACOWD ' + lang['application:'], font="Helvetica 13 bold").pack(padx=5, pady=5, side='left')
         ttk.Label(t4_frm8, text=lang['Running version:']).pack(padx=5, pady=1, side='left')
         ttk.Label(t4_frm8, text=fnku_version).pack(padx=5, pady=1, side='left')
 

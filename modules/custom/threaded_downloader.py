@@ -3,7 +3,7 @@ try:
 except ImportError:
     from queue import Queue
 from threading import Thread
-from modules.custom import FunKiiU_mod as fnku
+from modules.custom import ACOWD_mod as fnku
 from time import sleep
 
 
