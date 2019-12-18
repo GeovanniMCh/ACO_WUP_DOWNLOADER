@@ -122,6 +122,8 @@ def download_file(url, outfname, retry_count=3, ignore_404=False, expected_size=
                         
                 ### Download the file    
                 with open(outfname, mode) as outfile:
+                    rqst = Request(url)
+                    rqst.add_header('User-Agent', '')
                     infile = urlopen(rqst)
                     while True:
                         if abortq and not abortq.empty():
