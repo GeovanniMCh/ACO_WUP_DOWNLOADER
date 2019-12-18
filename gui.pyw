@@ -1312,7 +1312,7 @@ if __name__ == '__main__':
     root = RootWindow()
     root.title('ACO WUP DOWLOADER 3.0.0')
     root.minsize(850, 400)
-    root.geometry("1020x{}+0+0".format(root.winfo_screenheight() - 40))
+    root.geometry("1020x{}+0+0".format(root.winfo_screenheight() - 80))
     root.set_icon(root)
     root.after(1000, root.process_result_queue)
     root.mainloop()
